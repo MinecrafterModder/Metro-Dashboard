@@ -7,12 +7,15 @@
     <meta content="A W.I.P. recreation of the Xbox 360 Metro dashboard in a website." property="og:description" />
     <meta content="https://minecraftermodder.github.io/Metro-Dashboard/" property="og:url" />
     <meta content="#108710" data-react-helmet="true" name="theme-color" />
+    <meta property="og:image" content="assets/metro/favicon.png" />
     <style>
       html {
         background: linear-gradient(to bottom, #444444, #AAAAAA, #CCCCCC, #999999);
       }
       body {
         margin: 0;
+        user-select: none;
+        -webkit-user-select: none;
       }
       .grid {
         display: flex;
@@ -81,22 +84,22 @@
   <body>
     <div class="grid">
       <div class="gridrow">
-        <a class="gridbutton"><img src="assets/metro/opentray.png"/><span>Open Tray</span></a>
-        <a class="longgridbutton"><img src="assets/metro/gold.png"/><span>Gold</span></a>
-        <a class="longgridbutton"><img src="assets/metro/gold.png"/><span>Gold</span></a>
-        <a class="gridbutton"><img src="assets/metro/search.png"/><span>Search</span></a>
+        <a class="gridbutton"><img src="assets/metro/opentray.png" draggable="false"/><span>Open Tray</span></a>
+        <a class="longgridbutton"><img src="assets/metro/gold.png" draggable="false"/><span>Gold</span></a>
+        <a class="longgridbutton"><img src="assets/metro/gold.png" draggable="false"/><span>Gold</span></a>
+        <a class="gridbutton"><img src="assets/metro/search.png" draggable="false"/><span>Search</span></a>
       </div>
       <div class="gridrow">
-        <a class="gridbutton"><img src="assets/metro/mypins.png"/><span>My Pins</span></a>
-        <a class="longgridbutton"><img src="assets/metro/gold.png"/><span>Gold</span></a>
-        <a class="longgridbutton"><img src="assets/metro/gold.png"/><span>Gold</span></a>
-        <a class="gridbutton"><img src="assets/metro/needhelp.png"/><span>Need Help?</span></a>
+        <a class="gridbutton"><img src="assets/metro/mypins.png" draggable="false"/><span>My Pins</span></a>
+        <a class="longgridbutton"><img src="assets/metro/gold.png" draggable="false"/><span>Gold</span></a>
+        <a class="longgridbutton"><img src="assets/metro/gold.png" draggable="false"/><span>Gold</span></a>
+        <a class="gridbutton"><img src="assets/metro/needhelp.png" draggable="false"/><span>Need Help?</span></a>
       </div>
       <div class="gridrow">
-        <a class="gridbutton"><img src="assets/metro/recent.png"/><span>Recent</span></a>
-        <a class="longgridbutton"><img src="assets/metro/moviestv.png"/><span>Movies & TV</span></a>
-        <a class="longgridbutton"><img src="assets/metro/myapps.png"/><span>My Apps</span></a>
-        <a class="gridbutton"><img src="assets/metro/mygames.png"/><span>My Games</span></a>
+        <a class="gridbutton"><img src="assets/metro/recent.png" draggable="false"/><span>Recent</span></a>
+        <a class="longgridbutton"><img src="assets/metro/moviestv.png" draggable="false"/><span>Movies & TV</span></a>
+        <a class="longgridbutton"><img src="assets/metro/myapps.png" draggable="false"/><span>My Apps</span></a>
+        <a class="gridbutton"><img src="assets/metro/mygames.png" draggable="false"/><span>My Games</span></a>
       </div>
     </div>
   </body>
