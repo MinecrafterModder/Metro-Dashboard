@@ -35,32 +35,18 @@
         height: 125px;
         width: 175px;
         flex-direction: column;
-        transition: transform .2s;
-      }
-      .gridbutton img, .longgridbutton img {
-        width: 40px;
-        height: 40px;
-        margin: auto;
-        user-select: none;
-        -webkit-user-drag: none;
-        pointer-events: none;
-      }
-      .gridbutton span, .longgridbutton span {
-        margin-left: 10px;
-        margin-bottom: 5px;
-        color: white;
-        font-family: "Segoe UI";
-        user-select: none;
-        letter-spacing: 1px;
+        box-shadow: 0px 0px 0px #000000BF;
+        transition: transform .2s, box-shadow .2s;
+        cursor: pointer;
       }
       .gridbutton:hover {
         background: linear-gradient(to bottom right, #6EA36E 0%, #108710 50%);
-        box-shadow: 0px 0px 20px #000000BF;
+        box-shadow: 0px 0px 25px #000000BF;
         z-index: 1;
-        transform: scale(1.1)
+        transform: scale(1.1);
       }
       .gridbutton:active {
-        transform: scale(0.9)
+        transform: scale(.9)
       }
       .longgridbutton {
         background-color: #108710;
@@ -68,26 +54,44 @@
         height: 125px;
         width: 200px;
         flex-direction: column;
-        transition: transform .2s;
+        box-shadow: 0px 0px 0px #000000BF;
+        transition: transform .2s, box-shadow .2s;
+        cursor: pointer;
       }
       .longgridbutton:hover {
         background: linear-gradient(to bottom right, #6EA36E 0%, #108710 50%);
-        box-shadow: 0px 0px 20px #000000BF;
+        box-shadow: 0px 0px 25px #000000BF;
         z-index: 1;
-        transform: scale(1.1)
+        transform: scale(1.1);
       }
       .longgridbutton:active {
-        transform: scale(0.9)
+        transform: scale(.9)
+      }
+      .gridbutton img, .longgridbutton img {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+      }
+      .gridbutton span, .longgridbutton span {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        color: white;
+        font-family: "Segoe UI";
+        letter-spacing: 1px;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <div class="grid">
+      <audio id="hover">
+        <source src="assets\metro\buttonmove.wav"></source>
+      </audio>
       <div class="gridrow">
         <a class="gridbutton"><img src="assets/metro/opentray.png" draggable="false"/><span>Open Tray</span></a>
         <a class="longgridbutton"><img src="assets/metro/gold.png" draggable="false"/><span>Gold</span></a>
         <a class="longgridbutton"><img src="assets/metro/gold.png" draggable="false"/><span>Gold</span></a>
-        <a class="gridbutton"><img src="assets/metro/search.png" draggable="false"/><span>Search</span></a>
+        <a class="gridbutton" href="https://bing.com"><img src="assets/metro/search.png" draggable="false"/><span>Search</span></a>
       </div>
       <div class="gridrow">
         <a class="gridbutton"><img src="assets/metro/mypins.png" draggable="false"/><span>My Pins</span></a>
